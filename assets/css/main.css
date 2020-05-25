@@ -77,7 +77,10 @@ align-items: center;
 }
  
 
+.submenu {
+  color: black;
 
+}
 
 
 
@@ -112,11 +115,11 @@ font-size: 2em;
 
 /*Aqui empieza seccion dos*/
 
-a {
+a:link, a:visited, a:active {
 text-decoration:none;
-
 padding-left: 40px;
 padding-right: 40px;
+
 }
 
 .menulogo {
@@ -308,7 +311,10 @@ height: auto;
   align-items: center;
 }
 
+.submenu {
+  color: black;
 
+}
 
 .menutel {
 display: none;
