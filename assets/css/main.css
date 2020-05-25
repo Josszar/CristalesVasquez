@@ -6,57 +6,65 @@ body {
   width: 100%;
   margin: 0;
   padding: 0;
-  
 }
 
+/* Menu azul*/
 nav  {
 background: #5B98CF;
+width: 100%;
+height: 50px;
 color: white;
 height: 50px;
 font-family: 'Montserrat', sans-serif;
 display: flex;
-justify-content: space-around;
+justify-content: space-between;
 align-items: center;
+
 
 }
 
-.menu {
-  color: #ffffff;
- 
-}    
-
-
-.uno {
+/*Telefono*/
+.azuluno {
   display: flex;
   justify-content: flex-end;
   align-items: center;
- 
+  margin: 0;
+  padding: 0%;
   
 }
-
 img.telephone {
   padding: 10px;
 
 }
-
 .telephone {
   padding: 30px;
   display: flex;
   align-items: center;
+  padding-bottom: 0px;
+  padding-top: 0px;
   
 }
+.menutel {
+color: #ffffff;
+font-size: 1.2em;
+}    
 
-.dos {
+/*correo*/
+.azuldos {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  
 }
 
+/*Social media*/
+.azultres {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
 img.email {
   padding: 10px;
 width: 
-
 }
 .email {
 display: flex;
@@ -64,15 +72,54 @@ align-items: center;
 
 }
 
+#logovasquez {
+ width=1000;
+}
+ 
+
+
+
+
+
+
+/*Menu blanco*/
+
+.menublanco {
+display: flex;
+justify-content: space-around;
+align-items: center;
+}
+
+#logovasquez {
+padding-top: 10px;
+padding-bottom: 10px;
+margin-top: 0;
+margin-bottom: 30px;
+
+}
+.menublanco1 {
+display: flex;
+justify-content: space-around;
+align-items: flex-start;
+}
+
+.menublanco2 {
+display: flex;
+justify-content: space-between;
+align-items: center;
+font-size: 2em;
+}
 
 /*Aqui empieza seccion dos*/
 
-a:link, a:visited, a:active {
+a {
 text-decoration:none;
+
+padding-left: 40px;
+padding-right: 40px;
 }
 
-.menudos {
-
+.menulogo {
   background: #ffffff;
   height: 100px;
   display: flex;
@@ -81,35 +128,40 @@ text-decoration:none;
   color: black;
   font-size: 17px;
   
-
-
 }
 
 img.trabajadores {
   width: 100% ;
   height: 100%;
-  
-
 
 }
 
-
-h1 {
-    font-size: 1.5rem;
+#years {
+    font-size: 3rem;
     text-align: center;
     font-family: 'Lato', sans-serif;
-    margin-top: 40px;
-    margin-bottom: 40px;
+    margin-bottom: 0px;
 }
 h2 {
   text-align: center;
   font-family: 'Lato', sans-serif;
     margin-top: 40px;
     margin-bottom: 40px;
+   
 }
 
+.topics {
+  text-align: center;
+  font-family: 'Lato', sans-serif;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    font-size: 2em;
+  
+  
 
-.parteservicios {
+}
+.ptext {
+font-size: 1.5em;
 
 }
 
@@ -126,6 +178,8 @@ h2 {
       flex-wrap: wrap;
       width: 100%;
       height: 100%;
+      margin-bottom: 50px;
+      
 }
 
 /*Contenedores Hijos*/
@@ -147,17 +201,22 @@ justify-content: center;
 background-color: #F1F0F0;
 
 }
+.hsize3 {
+    font-size: 1.5em;
+  text-align: center;
+  }
 
 footer  {
 background: #5B98CF;
 color: white;
 height: 200px;
 font-family: 'Montserrat', sans-serif;
-font-size: .8em;
+font-size: 1em;
 display: flex;
 flex-direction: column;
 justify-content: space-evenly;
 padding-left: 30px;
+/*border: 1px solid  green*/
 
 
 }
@@ -167,21 +226,24 @@ padding-left: 30px;
   display: flex;
   justify-content: flex-start;
   align-items: center;
- /* 
-border: 1px solid #ffffff;
-  */
+
+}
+
+.ftelephone {
+color: white;
+
 }
 
 .dosf {
   height: auto;
   display: flex;
   justify-content: flex-start;
-  lign-items: center;
+  align-items: center;
   justify-content: flex-start;
   align-items: center;
-   /* 
-border: 1px solid #ffffff;
-  */
+ 
+
+
 }
 
 
@@ -226,10 +288,81 @@ width: 70%;
 height: auto;
 }
 
-h3 {
-  text-align: center;
-}
+
 
 .pfooter {
   text-align: center;
+}
+
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+ #logovasquez {
+        width: 200px;
+    }
+
+.uno {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+
+.menutel {
+display: none;
+}    
+
+
+
+.menublanco {
+border: 1px solid black;
+display: flex;
+flex-direction: column;
+padding-top: 10px;
+padding-bottom: 10px;
+
+}
+
+.menublanco2 {
+border: 1px solid rebeccapurple;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: center;
+font-size: .1.5em;
+}
+#years {
+    font-size: 1.5em;
+    text-align: center;
+    font-family: 'Lato', sans-serif;
+    margin-bottom: 40px;
+    border: 1px solid  red
+}
+
+.servicesdesign {
+width: 100%;
+height: 30%;
+margin-top: 1vh;
+margin-bottom: 1vh;
+margin-left: 1vw;
+margin-right: 1vh;
+padding-top: 1vh;
+padding-bottom: 1vh;
+padding-left: 1vh;
+padding-right: 1vh;
+display: flex;
+flex-direction: column;
+justify-content: center;
+text-align: center;
+background-color: #F1F0F0;
+}
+
+.blood {
+display: flex;
+justify-content: center;
+align-items: center;
+font-size: .8em;
+}
+
 }
